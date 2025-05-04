@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title> Personal Portfolio </title>
+
+  <!-- Font and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Main CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #0a0a0a, #1f1f1f);
+      color: #ffffff;
+      min-height: 100vh;
+    }
+  
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      z-index: 999;
+    }
+    nav .logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+       }
+    nav ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #00ffe0;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .hero{
+        background-image: url(12.jpg);
+        background-size: cover;
+        justify-content: flex-start;
+        padding-left: 200px;
+    }
+    .profile {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #00ffe0;
+      margin: 20px;
+      animation: float 1.5s ease-in-out infinite;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      max-width: 600px;
+    }
+    .hero-content{
+        border: 5px solid #0edda94d;
+        box-shadow: 0px 8px 20px  rgb(0, 255, 224);
+        border-radius: 100px;
+    }
+    .scroll-down {
+      margin-top: 30px;
+      font-size: 2rem;
+      color: #00ffe0;
+      animation: bounce 2s infinite;
+    }
+    .about{
+      margin: 50%;
+    }
+
+    /* Animations */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        padding: 15px 30px;
+      }
+      nav ul {
+        gap: 15px;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .hero{
+        padding-left: 20px;
+        margin: 10px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+        <img src="pic.jpg" alt="profile-pic" class="logo"/>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.pdf" target="_blank">Resume</a></li>
+    </ul>
+  </nav>
+
+<!-- Hero Section with Trimmed Background Video -->
+<section id="home" class="hero">
+
+ <!--   <video autoplay muted loop id="heroVideo">
+      <source src="bg.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>-->
+
+
+  
+    <div class="hero-content">
+        <img src="pic.jpg" alt="profile-pic" class="profile"/>
+      <h1>HI, I'm DHIVYA K S 👋</h1>
+      <p> FULL STACK DEVELOPER | AI MODEL TRAINER | FREELANCER </p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+  </section>
+  
+
+
+  <!-- About Section -->
+<section id="about" style="background-color: #111; background-image: url(1.jpg); background-size: cover; color: #eee; text-align: center;">
+    <div class="about" style="max-width: 1000px; height: max-content; margin: auto; padding-top: 50px; padding-bottom: 50px;">
+      <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: #00ffe0;">About Me</h2>
+      <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 40px; color: #fff">
+        Hello! I'm <b style="color:#00ffe0;">Dhivya K S</b>, a passionate and energetic budding web developer 👨‍💻✨,
+        recently graduated and ready to make a serious impact.  
+        I believe in building creative, bold, and user-friendly digital experiences.  
+        <br><br>
+        Though I may be at the beginning of my professional journey,  
+        my dedication to learning, growing, and delivering my best is unmatched.
+      </p>
+  
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px;">
+        <div style="flex: 1; min-width: 250px; background: #1a1a1a; padding: 30px; border-radius: 12px;">
+          <h3 style="color: #00ffe0; margin-bottom: 10px;">Education 🎓</h3>
+          <p>Bachelor’s Degree in Computer Science (2024)<br>from XYZ University, India.</p>
+        </div>
+  
+        <div style="flex: 1; min-width: 250px; background: #1a1a1a; padding: 30px; border-radius: 12px;">
+          <h3 style="color: #00ffe0; margin-bottom: 10px;">Skills ⚡</h3>
+          <p>HTML, CSS, JavaScript, Responsive Web Design,<br>Basic React, Git & GitHub, UI/UX Basics.</p>
+        </div>
+  
+        <div style="flex: 1; min-width: 250px; background: #1a1a1a; padding: 30px; border-radius: 12px;">
+          <h3 style="color: #00ffe0; margin-bottom: 10px;">Hobbies 🌈</h3>
+          <p>Exploring new tech, Designing layouts, Gaming, Sketching, Watching tech podcasts 🚀</p>
+        </div>
+  
+        <div style="flex: 1; min-width: 250px; background: #1a1a1a; padding: 30px; border-radius: 12px;">
+          <h3 style="color: #00ffe0; margin-bottom: 10px;">Soft Skills 🌟</h3>
+          <p>Teamwork, Fast Learner, Good Communication, Creative Problem Solving, Adaptability.</p>
+        </div>
+      </div>
+  
+      <div style="margin-top: 60px;">
+        <h3 style="font-size: 1.8rem; color: #00ffe0;">My Goal 🚀</h3>
+        <p style="font-size: 1.1rem; margin-top: 10px;">To grow into a full-stack developer role,  
+        contributing to innovative projects, learning every day, and eventually leading a team that builds awesome digital solutions.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+      <h2 style="font-size: 2.5rem; margin: 0px; color: #00ffe0;">My Projects</h2>
+      <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 40px; color: #fff">
+        Here’s a glimpse of what I’ve built so far on my learning journey 🚀
+      </p>
+  
+      <div class="projects-grid">
+  
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <img src="images/coding-world.jpg" alt="coding-world" class="project-image">
+          <div class="project-content">
+            <h3>Coding World</h3>
+            <p>Showcase of various coding projects using simple languages and techniques.</p>
+        </div>
+        </div>
+  
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <img src="images/ice-cream-shop.jpg" alt="ice-cream-shop" class="project-image">
+          <div class="project-content">
+            <h3>Sugar & Spicy</h3>
+            <p>Responsive landing page displaying a delightful collection of ice creams.</p>
+        </div>
+        </div>
+  
+        <!-- Project Card 3 -->
+        <div class="project-card">
+          <img src="images/calculator.jpg" alt="Trendy Calculator" class="project-image">
+          <div class="project-content">
+            <h3>Trendy Calculator</h3>
+            <p>A JavaScript-based calculator that performs basic operations cleanly.</p>
+          </div>
+        </div>
+  
+        <!-- Project Card 4 -->
+        <div class="project-card">
+          <img src="images/weather.jpg" alt="Weather App" class="project-image">
+          <div class="project-content">
+            <h3>Weather App</h3>
+            <p>Weather forecast app fetching real-time data via OpenWeatherMap API.</p>
+          </div>
+        </div>
+  
+ <!-- Project Card 5 -->
+ <div class="project-card">
+    <img src="images/recipe-book.jpg" alt="Yummify Book" class="project-image">
+    <div class="project-content">
+      <h3>Yummify Book</h3>
+      <p>Save, organize, and explore recipes to master your kitchen adventures.</p>
+    </div>
+  </div>
+
+   <!-- Project Card 6 -->
+   <div class="project-card">
+    <img src="images/game-world.jpg" alt="Gaming Site" class="project-image">
+    <div class="project-content">
+      <h3>Gaming Site</h3>
+      <p>Play simple games, enjoy challenges, and have fun anytime.</p>
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </section>
+
+ <!-- Contact Section -->
+<section id="contact" class="contact">
+    <div>
+      <h2 style="font-size: 2.5rem; margin: 20px; color: #00ffe0; text-align: center;">Get In Touch</h2>
+      <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 40px; color: #fff; text-align: center;">
+        I'm open for opportunities, collaborations, or just a friendly hello! 🚀
+      </p>
+  
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+  
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+  
+        <div class="form-group">
+          <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        </div>
+  
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+  
+        <button type="button" id="submitButton" class="btn">Send Message</button>
+        <p id="formMessage"></p> <!-- Confirmation Message -->
+      </form>
+    </div>
+  </section>
+  
+
+<!-- Resume Section -->
+<section id="resume" class="resume">
+    <div class="container">
+      <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: #00ffe0;">Download My Resume</h2>
+      <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 40px; color: #fff">
+        Want to learn more about my experience? Feel free to download my resume below! 🎉
+      </p>
+  
+      <button id="downloadResume" class="btn resume-btn">
+        Download Resume
+      </button>
+  
+      <p id="downloadMessage" class="message"></p> <!-- Success/Failure Message -->
+    </div>
+  </section>
+  
+  <script src="script.js"></script>
+ 
+</body>
+</html>
